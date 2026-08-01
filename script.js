@@ -16,9 +16,6 @@
     onScroll();
   }
 
-  // Reveal-on-scroll — handled by CSS animation (dsReveal). No observer needed.
-  // Kept intentionally empty for future use.
-
   // Contact form: build a mailto from the fields
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
