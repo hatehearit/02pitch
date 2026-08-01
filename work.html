@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decks — ZeroToPitch</title>
+  <meta name="description" content="Three pitch decks we worked on, with the before/after reasoning behind each argument." />
+  <meta name="theme-color" content="#ECE4D9" />
+
+  
+  <link rel="apple-touch-icon" href="assets/logo-256.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Quattrocento:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="work.css" />
+  <link rel="stylesheet" href="cookie-banner.css" />
+</head>
+<body class="pagePage">
+
+  <!-- ============== SIDEBAR (pages) ============== -->
+  <aside class="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html" aria-label="ZeroToPitch home">
+      <img class="sidebar__logo" src="assets/logo-96.png" alt="ZeroToPitch" width="75" height="96" />
+      <span class="sidebar__brandText">ZEROTOPITCH</span>
+    </a>
+
+    <nav class="sidebar__nav" aria-label="Primary">
+      <a class="sidebar__item" href="index.html" data-page="main">
+        <span class="sidebar__num">01</span>
+        <span class="sidebar__name">Main</span>
+        <span class="sidebar__sub">Home</span>
+      </a>
+      <a class="sidebar__item is-active" href="work.html" data-page="decks">
+        <span class="sidebar__num">02</span>
+        <span class="sidebar__name">Decks</span>
+        <span class="sidebar__sub">Lookbook</span>
+      </a>
+      <a class="sidebar__item" href="faq.html" data-page="qa">
+        <span class="sidebar__num">03</span>
+        <span class="sidebar__name">Q&amp;A</span>
+        <span class="sidebar__sub">Questions</span>
+      </a>
+      <a class="sidebar__item" href="about.html" data-page="about">
+        <span class="sidebar__num">04</span>
+        <span class="sidebar__name">About</span>
+        <span class="sidebar__sub">Who we are</span>
+      </a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="btn btn--small btn--accent btn--full" href="index.html#contact">Free deck read</a>
+    </div>
+  </aside>
+
+  <!-- ============== MOBILE TOP BAR (floating) ============== -->
+  <button class="pageFab" id="pageFab" type="button" aria-label="Open page navigation" aria-expanded="false">
+    <span class="pageFab__bars" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="pageFab__label" id="pageFabLabel">Decks</span>
+  </button>
+
+  <main>
+    <!-- ============== PAGE HEAD ============== -->
+    <section class="pageHead">
+      <div class="container">
+        <p class="eyebrow">
+          <span class="eyebrow__square" aria-hidden="true"></span>
+          Lookbook &middot; Three decks
+        </p>
+        <h1 class="pageHead__title">
+          The deck is the product.<br />
+          We build it like one.
+        </h1>
+        <p class="pageHead__sub">
+          Three real pre-seed decks, with a short read on what was changed and why. Scroll through the pages, or open the deck full-screen. Files render locally, nothing is uploaded anywhere.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== DECK 01 — ClauseIQ ============== -->
+    <section class="caseStudy" id="clauseiq">
+      <div class="container">
+        <div class="caseStudy__head">
+          <p class="case__sector">Legal-tech &middot; Pre-seed &middot; $500K</p>
+          <h2 class="caseStudy__title">ClauseIQ: AI contract review for real estate lawyers.</h2>
+          <div class="caseStudy__read">
+            <p>The original deck led with a market-size slide and a feature list. We moved the founder&rsquo;s own practice experience to slide one, made the AI a tool inside a real workflow, not the headline, and cut the TAM to focus on a $60M beachhead.</p>
+            <p>Review time dropped from 40 to 7 minutes for early users. The story stopped reading like a product tour and started reading like a founder who had lived the problem.</p>
+          </div>
+          <p class="case__tag">Argument rebuilt &middot; Visual build &middot; Q&amp;A prep</p>
+        </div>
+
+        <div class="deckFrame" data-pdf="decks/ClauseIQ.pdf" data-title="ClauseIQ">
+          <div class="deckFrame__bar">
+            <span class="deckFrame__brand">
+              <span class="wordmark__dot" aria-hidden="true"></span>
+              <span class="deckFrame__title">ClauseIQ &middot; Sample deck</span>
+            </span>
+            <div class="deckFrame__nav">
+              <button class="pdfBtn js-prev" type="button" aria-label="Previous page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <span class="deckFrame__page js-page">1 / 1</span>
+              <button class="pdfBtn js-next" type="button" aria-label="Next page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomOut" type="button" aria-label="Zoom out">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomIn" type="button" aria-label="Zoom in">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+              </button>
+              <button class="pdfBtn js-close" type="button" aria-label="Close viewer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="deckFrame__paper js-stage">
+            <canvas class="js-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== DECK 02 — FinFlow ============== -->
+    <section class="caseStudy" id="finflow">
+      <div class="container">
+        <div class="caseStudy__head">
+          <p class="case__sector">Fintech &middot; Pre-seed &middot; $600K</p>
+          <h2 class="caseStudy__title">FinFlow: cash flow forecasting for small businesses.</h2>
+          <div class="caseStudy__read">
+            <p>Strong tech, weak hook. We led with the 82% failure stat and made the founder&rsquo;s prior SMB lending experience the credibility anchor.</p>
+            <p>Three-tier pricing laid out plain, traction framed as &ldquo;cash we already recovered for them,&rdquo; not as a vanity chart. 25 customers, $4.2K MRR at handoff.</p>
+          </div>
+          <p class="case__tag">Narrative pass &middot; Slide sequencing &middot; Visual build</p>
+        </div>
+
+        <div class="deckFrame" data-pdf="decks/FinFlow.pdf" data-title="FinFlow">
+          <div class="deckFrame__bar">
+            <span class="deckFrame__brand">
+              <span class="wordmark__dot" aria-hidden="true"></span>
+              <span class="deckFrame__title">FinFlow &middot; Sample deck</span>
+            </span>
+            <div class="deckFrame__nav">
+              <button class="pdfBtn js-prev" type="button" aria-label="Previous page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <span class="deckFrame__page js-page">1 / 1</span>
+              <button class="pdfBtn js-next" type="button" aria-label="Next page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomOut" type="button" aria-label="Zoom out">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomIn" type="button" aria-label="Zoom in">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+              </button>
+              <button class="pdfBtn js-close" type="button" aria-label="Close viewer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="deckFrame__paper js-stage">
+            <canvas class="js-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== DECK 03 — NutriAI ============== -->
+    <section class="caseStudy" id="nutriai">
+      <div class="container">
+        <div class="caseStudy__head">
+          <p class="case__sector">Health-tech &middot; Pre-seed &middot; $500K</p>
+          <h2 class="caseStudy__title">NutriAI: personalized nutrition for the modern workforce.</h2>
+          <div class="caseStudy__read">
+            <p>Corporate wellness is a graveyard of generic apps. We reframed the wedge around &ldquo;low engagement, low ROI&rdquo; on the employer side, made personalization the moat, and pushed the per-employee pricing as a line item HR can sign off without a board meeting.</p>
+            <p>Targeting 10 enterprise pilots post-round.</p>
+          </div>
+          <p class="case__tag">Argument rebuilt &middot; Visual build &middot; Buyer-perspective rewrite</p>
+        </div>
+
+        <div class="deckFrame" data-pdf="decks/NutriAI_PitchDeck.pdf" data-title="NutriAI">
+          <div class="deckFrame__bar">
+            <span class="deckFrame__brand">
+              <span class="wordmark__dot" aria-hidden="true"></span>
+              <span class="deckFrame__title">NutriAI &middot; Sample deck</span>
+            </span>
+            <div class="deckFrame__nav">
+              <button class="pdfBtn js-prev" type="button" aria-label="Previous page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <span class="deckFrame__page js-page">1 / 1</span>
+              <button class="pdfBtn js-next" type="button" aria-label="Next page">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomOut" type="button" aria-label="Zoom out">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg>
+              </button>
+              <button class="pdfBtn js-zoomIn" type="button" aria-label="Zoom in">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+              </button>
+              <button class="pdfBtn js-close" type="button" aria-label="Close viewer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M6 18L18 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="deckFrame__paper js-stage">
+            <canvas class="js-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CTA ============== -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__left">
+          <p class="section-label">Get a free read</p>
+          <h2 class="contact__headline">
+            Send us your deck.<br />
+            We&rsquo;ll tell you in 48 hours<br />
+            whether it&rsquo;s a story problem<br />
+            or a slide problem.
+          </h2>
+          <p class="contact__sub">Free. No pitch. If we&rsquo;re not the right fit, we&rsquo;ll tell you that too.</p>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="stage">Stage</label>
+            <select id="stage" name="stage">
+              <option>Pre-seed</option>
+              <option>Seed</option>
+              <option>Bridge / pre-seed extension</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="notes">What&rsquo;s going on? (one paragraph is fine)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="e.g. raising $1.5M pre-seed, have a draft deck, stuck on the why-now."></textarea>
+          </div>
+          <div class="field field--full field--actions">
+            <button class="btn btn--accent btn--full" type="submit">Send for a free read</button>
+            <p class="form__note">Or just email <a href="mailto:hello@deckstudios.co">hello@deckstudios.co</a></p>
+          </div>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="wordmark wordmark--small" href="index.html">
+        ZeroTo&nbsp;Pitch
+      </a>
+      <p class="footer__meta"><a href="imprint.html">Imprint</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="cookies.html">Cookies</a> &middot; <a href="#" id="manageCookies">Manage cookies</a></p>
+      <p class="footer__meta">hello@deckstudios.co</p>
+    </div>
+  </footer>
+
+  <!-- PDF.js for inline deck rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="cookie-banner.js"></script>
+  <script src="work.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mc = document.getElementById('manageCookies');
+      if (mc) mc.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (window.openCookieSettings) window.openCookieSettings();
+      });
+    });
+  </script>
+</body>
+</html>
