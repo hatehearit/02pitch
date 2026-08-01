@@ -1,1 +1,3 @@
-# 02pitch
+# ZeroToPitch
+
+Pitch narrative studio.
