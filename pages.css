@@ -250,6 +250,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: var(--ink-mute);
     padding-top: 3px;
   }
@@ -436,16 +437,16 @@
 }
 .brandHeader__logo {
   width: auto;
-  height: clamp(56px, 7vw, 88px);
-  max-width: 120px;
-  margin: 0 auto 10px;
+  height: clamp(88px, 11vw, 140px);
+  max-width: 180px;
+  margin: 0 auto 14px;
   display: block;
   object-fit: contain;
 }
 .brandHeader__name {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(20px, 2.4vw, 28px);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink);
