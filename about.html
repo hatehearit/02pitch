@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — ZeroToPitch</title>
+  <meta name="description" content="Two people. Founder-led. Built and sold a business, pitched investors directly. No team, no agency, no template farm." />
+  <meta name="theme-color" content="#ECE4D9" />
+
+  
+  <link rel="apple-touch-icon" href="assets/logo-256.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Quattrocento:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="cookie-banner.css" />
+</head>
+<body class="pagePage aboutPage">
+
+  <!-- ============== SIDEBAR (pages) ============== -->
+  <aside class="sidebar" aria-label="Site navigation">
+    <a class="sidebar__brand" href="index.html" aria-label="ZeroToPitch home">
+      <img class="sidebar__logo" src="assets/logo-96.png" alt="ZeroToPitch" width="75" height="96" />
+      <span class="sidebar__brandText">ZEROTOPITCH</span>
+    </a>
+
+    <nav class="sidebar__nav" aria-label="Primary">
+      <a class="sidebar__item" href="index.html" data-page="main">
+        <span class="sidebar__num">01</span>
+        <span class="sidebar__name">Main</span>
+        <span class="sidebar__sub">Home</span>
+      </a>
+      <a class="sidebar__item" href="work.html" data-page="decks">
+        <span class="sidebar__num">02</span>
+        <span class="sidebar__name">Decks</span>
+        <span class="sidebar__sub">Lookbook</span>
+      </a>
+      <a class="sidebar__item" href="faq.html" data-page="qa">
+        <span class="sidebar__num">03</span>
+        <span class="sidebar__name">Q&amp;A</span>
+        <span class="sidebar__sub">Questions</span>
+      </a>
+      <a class="sidebar__item is-active" href="about.html" data-page="about">
+        <span class="sidebar__num">04</span>
+        <span class="sidebar__name">About</span>
+        <span class="sidebar__sub">Who we are</span>
+      </a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <a class="btn btn--small btn--accent btn--full" href="index.html#contact">Free deck read</a>
+    </div>
+  </aside>
+
+  <!-- ============== MOBILE TOP BAR (floating) ============== -->
+  <button class="pageFab" id="pageFab" type="button" aria-label="Open page navigation" aria-expanded="false">
+    <span class="pageFab__bars" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="pageFab__label" id="pageFabLabel">About</span>
+  </button>
+
+  <main>
+    <!-- ============== PAGE HEAD ============== -->
+    <section class="pageHead">
+      <div class="container">
+        <p class="eyebrow">
+          <span class="eyebrow__square" aria-hidden="true"></span>
+          About &middot; Two people
+        </p>
+        <h1 class="pageHead__title">
+          Two people. One deck,<br />
+          end to end.
+        </h1>
+      </div>
+    </section>
+
+    <!-- ============== ABOUT BODY ============== -->
+    <section class="aboutPage__body">
+      <div class="container aboutPage__inner">
+        <p class="aboutPage__lead">
+          Founder-led. Built and sold a business, pitched investors directly, not just designed slides for people who did.
+        </p>
+        <div class="aboutPage__cols">
+          <p>One of us handles the narrative and pitch logic. The other handles design execution. No team, no agency, no template farm. If you email us, one of the two will write back the same day.</p>
+          <p>We&rsquo;re not a design agency with opinions about storytelling. We&rsquo;re storytellers who know what an investor actually reads, because we&rsquo;ve sat where you sit and watched the deck land or not.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PROCESS RECAP (3-4 steps) ============== -->
+    <section class="aboutProcess">
+      <div class="container">
+        <p class="section-label">Process</p>
+        <h2 class="aboutProcess__title">How the work moves.</h2>
+        <ol class="aboutProcess__list">
+          <li><span class="aboutProcess__num">01</span><div><strong>Diagnose.</strong> We read your deck or notes and tell you, in plain language, what&rsquo;s a story problem and what&rsquo;s a design problem. We charge for the diagnostic, but if the deck doesn&rsquo;t need a rebuild, we tell you that.</div></li>
+          <li><span class="aboutProcess__num">02</span><div><strong>Rebuild the argument.</strong> Narrative structure first, slide by slide. The why now, the wedge, the unfair insight, the ask. We sequence it so the investor gets it on the second slide, not the tenth.</div></li>
+          <li><span class="aboutProcess__num">03</span><div><strong>Execute.</strong> Visual build. Clean, restrained, no agency nonsense. The slides exist to support the argument, not the other way around.</div></li>
+          <li><span class="aboutProcess__num">04</span><div><strong>Deliver.</strong> Final deck plus one revision round. You walk into the meeting with the narrative tight, the slides out of the way, and a clear answer to &ldquo;so what.&rdquo;</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============== CTA ============== -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__left">
+          <p class="section-label">Get a free read</p>
+          <h2 class="contact__headline">
+            Send us your deck.<br />
+            We&rsquo;ll tell you in 48 hours<br />
+            whether it&rsquo;s a story problem<br />
+            or a slide problem.
+          </h2>
+          <p class="contact__sub">Free. No pitch. If we&rsquo;re not the right fit, we&rsquo;ll tell you that too.</p>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="stage">Stage</label>
+            <select id="stage" name="stage">
+              <option>Pre-seed</option>
+              <option>Seed</option>
+              <option>Bridge / pre-seed extension</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="notes">What&rsquo;s going on? (one paragraph is fine)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="e.g. raising $1.5M pre-seed, have a draft deck, stuck on the why-now."></textarea>
+          </div>
+          <div class="field field--full field--actions">
+            <button class="btn btn--accent btn--full" type="submit">Send for a free read</button>
+            <p class="form__note">Or just email <a href="mailto:hello@deckstudios.co">hello@deckstudios.co</a></p>
+          </div>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="wordmark wordmark--small" href="index.html">
+        ZeroTo&nbsp;Pitch
+      </a>
+      <p class="footer__meta"><a href="imprint.html">Imprint</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="cookies.html">Cookies</a> &middot; <a href="#" id="manageCookies">Manage cookies</a></p>
+      <p class="footer__meta">hello@deckstudios.co</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+  <script src="cookie-banner.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mc = document.getElementById('manageCookies');
+      if (mc) mc.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (window.openCookieSettings) window.openCookieSettings();
+      });
+    });
+  </script>
+</body>
+</html>
